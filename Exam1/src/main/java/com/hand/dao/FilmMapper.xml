@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+    <insert id="add">
+        insert into film(film_id,
+        title,
+        description,
+        release_year,
+        language_id,
+        original_language_id,
+        rental_duration,
+        rental_rate,
+        length,
+        replacement_cost,
+        rating,
+        special_features,
+        last_update)
+        values(#{film_id},
+        #{title},
+        #{description},
+        #{release_year},
+        #{language_id},
+        #{original_language_id},
+        #{rental_duration},
+        #{rental_rate},
+        #{length},
+        #{replacement_cost},
+        #{rating,special_features},
+        #{last_update})
+    </insert>
+</mapper>
